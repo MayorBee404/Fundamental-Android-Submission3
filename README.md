@@ -1,25 +1,35 @@
-# Dicoding Fundamental Android Submission 2
+# Dicoding Fundamental Android Submission 3
 
-#### Screenshots Submission 2
-<img src="https://github.com/MayorBee404/Fundamental-Android-Submission2/blob/master/screenshot/Screenshot_20220317_165321.png"
-     alt="Submission1 2"
+#### Screenshots Submission 3
+<img src="https://github.com/MayorBee404/Fundamental-Android-Submission3/blob/master/screenshot/Screenshot_1.png"
+     alt="Submission3"
      style="float: left; margin-right: 10px;"
-     width="200" /> 
-<img src="https://github.com/MayorBee404/Fundamental-Android-Submission2/blob/master/screenshot/Screenshot_20220318_175129.png"
-     alt="Submission1 2"
+     width="150" /> 
+<img src="https://github.com/MayorBee404/Fundamental-Android-Submission3/blob/master/screenshot/Screenshot_1.2.png"
+     alt="Submission3"
      style="float: left; margin-right: 10px;"
-     width="200" />
-<img src="https://github.com/MayorBee404/Fundamental-Android-Submission2/blob/master/screenshot/Screenshot_20220318_173046.png"
-     alt="Submission1 2"
+     width="150" />
+<img src="https://github.com/MayorBee404/Fundamental-Android-Submission3/blob/master/screenshot/Screenshot_2.png"
+     alt="Submission3"
      style="float: left; margin-right: 10px;"
-     width="200" />
+     width="150" />
+<img src="https://github.com/MayorBee404/Fundamental-Android-Submission3/blob/master/screenshot/Screenshot_3.png"
+     alt="Submission3"
+     style="float: left; margin-right: 10px;"
+     width="150" />
+<img src="https://github.com/MayorBee404/Fundamental-Android-Submission3/blob/master/screenshot/Screenshot_4.png"
+     alt="Submission3"
+     style="float: left; margin-right: 10px;"
+     width="150" />
 
-#### Submission 1 Checklists
-- [x] Mempertahankan fitur pada Submission 1. (Terpenuhi)</strong>.
-- [x] Pencarian User menggunakan data dari API berjalan dengan baik. (Terpenuhi)</strong>.
-- [x] Menggunakan TabLayout sebagai navigasi antara halaman List Follower dan List Following. (Terpenuhi) </strong>.
-- [x] Terdapat indikator loading saat aplikasi memuat data di semua halaman. (Terpenuhi).</strong>
-- [x] Aplikasi tidak force closed. (Terpenuhi) </strong>
+#### Submission 3 Checklists
+- [x] Aplikasi bisa menambah user ke daftar favorite. (Terpenuhi)</strong>.
+- [x] Aplikasi bisa menghapus user dari daftar favorite. (Terpenuhi)</strong>.
+- [x] Halaman yang menampilkan daftar user favorite. (Terpenuhi) </strong>.
+- [x] Terdapat pengaturan untuk mengganti tema. (Terpenuhi)</strong>
+- [x] Mempertahankan semua fitur aplikasi dan komponen yang digunakan pada Submission 2. (Terpenuhi) </strong>
+- [x] Aplikasi tidak force closed. (Terpenuhi)</strong>
 
 #### Review Cheklists
 :star::star::star::star::star:
+
