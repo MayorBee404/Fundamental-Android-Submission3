@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="382dp"
+                android:padding="16dp"
+                android:theme="@style/Theme.GithubUser"
+                tools:context=".ui.detailuser.DetailUser">
+
+
+                <ProgressBar
+                    android:id="@+id/detail_progress_bar"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="@+id/detail_avatar"
+                    app:layout_constraintHorizontal_bias="0.515"
+                    app:layout_constraintStart_toStartOf="@+id/detail_avatar"
+                    app:layout_constraintTop_toTopOf="@+id/detail_name" />
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_avatar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:text="@string/name"
+                    android:textColor="#EF6C00"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_avatar" />
+
+                <TextView
+                    android:id="@+id/detail_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detail_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/username"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_name" />
+
+                <TextView
+                    android:id="@+id/detail_repository"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/detail_followers"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toStartOf="@id/detail_followers"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/repository"
+                    android:textColor="#757575"
+                    app:layout_constraintBottom_toBottomOf="@+id/detail_following"
+                    app:layout_constraintEnd_toStartOf="@+id/detail_following"
+                    app:layout_constraintTop_toTopOf="@+id/detail_following" />
+
+                <TextView
+                    android:id="@+id/detail_followers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_location"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/followers"
+                    android:textColor="#757575"
+                    app:layout_constraintBottom_toBottomOf="@+id/detail_following"
+                    app:layout_constraintStart_toEndOf="@+id/detail_following"
+                    app:layout_constraintTop_toTopOf="@+id/detail_following" />
+
+                <TextView
+                    android:id="@+id/detail_following"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/detail_followers"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toEndOf="@id/detail_followers"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/following"
+                    android:textColor="#757575"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/detail_company"
+                    app:layout_constraintHorizontal_bias="0.529"
+                    app:layout_constraintStart_toStartOf="@+id/detail_company"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_company"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/detail_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/detail_username"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:text="@string/company"
+                    android:textColor="#757575"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_location" />
+
+                <TextView
+                    android:id="@+id/detail_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/detail_company"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="@string/location"
+                    android:textColor="#757575"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/detail_username" />
+
+                <com.github.siyamed.shapeimageview.RoundedImageView
+                    android:id="@+id/detail_avatar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.141"
+                    app:siBorderColor="@android:color/holo_orange_dark"
+                    app:siBorderWidth="5dp"
+                    app:siRadius="150dp"
+                    tools:ignore="ImageContrastCheck"
+                    tools:src="@tools:sample/avatars" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="104dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="@color/orange_light"
+                    android:clickable="true"
+                    android:contentDescription="@string/favorite_button"
+                    android:focusable="true"
+                    app:layout_constraintStart_toStartOf="@+id/detail_avatar"
+                    app:layout_constraintTop_toTopOf="@+id/detail_avatar"
+                    app:srcCompat="@drawable/ic_unfavorite"
+                    app:tint="@color/white"
+                    tools:ignore="ImageContrastCheck" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:minHeight="?actionBarSize"
+                android:outlineSpotShadowColor="@color/orange_light"
+                app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="2dp"
+                tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="543dp">
+
+            </androidx.viewpager2.widget.ViewPager2>
+        </LinearLayout>
+
+    </ScrollView>
+
+
